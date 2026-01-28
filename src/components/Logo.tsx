@@ -1,0 +1,18 @@
+import React from 'react';
+
+const Logo: React.FC = () => {
+    return (
+        <div className="flex flex-row items-center justify-center space-x-3">
+            <div className="w-8 h-6 text-foodle-red flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 50" fill="currentColor">
+                    <line x1="3" y1="6" x2="61" y2="6" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+                    <path d="M54.5,14.2H9.5C4.3,14.2,0,18.5,0,23.7v0c0,5.3,4.3,9.5,9.5,9.5h45.1c5.3,0,9.5-4.3,9.5-9.5v0 C64,18.5,59.7,14.2,54.5,14.2z M5.1,23.7c0-2.4,2-4.4,4.4-4.4h45.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4H9.5 C7.1,28.1,5.1,26.1,5.1,23.7z" fill="currentColor" />
+                    <line x1="3" y1="42" x2="61" y2="42" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+                </svg>
+            </div>
+            <h1 className="text-xl font-bold text-foodle-dark text-center">Foodle</h1>
+        </div>
+    );
+};
+
+export default Logo;

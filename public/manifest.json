@@ -1,0 +1,20 @@
+{
+  "name": "Foodle GPS Mobile",
+  "short_name": "Foodle GPS",
+  "description": "Share your mobile GPS location with Foodle for precise restaurant recommendations",
+  "start_url": "/mobile-gps",
+  "display": "standalone",
+  "background_color": "#FFFBF7",
+  "theme_color": "#EF4444",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["food", "lifestyle", "utilities"]
+}
