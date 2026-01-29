@@ -48,7 +48,7 @@ export const buildApiUrl = (endpoint: string): string => {
 
 // Default fetch options with credentials
 export const defaultFetchOptions: RequestInit = {
-    credentials: 'include',
+    credentials: 'include', // CRITICAL: Send cookies with every request (cross-origin)
     headers: {
         'Content-Type': 'application/json',
     },
@@ -75,4 +75,5 @@ export const apiCall = async (
     
     return fetch(url, finalOptions);
 };
+
 
