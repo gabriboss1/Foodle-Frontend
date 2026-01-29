@@ -1,11 +1,15 @@
 // API Configuration
 const getApiBaseUrl = (): string => {
+    // Check for environment variable first (Vercel/production)
+    if (process.env.REACT_APP_API_URL) {
+        return process.env.REACT_APP_API_URL;
+    }
     // In development, use the backend server
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
         return 'http://localhost:5000'; // Backend runs on 5000
     }
-    // In production, adjust this to your deployed backend URL
-    return 'https://your-backend-domain.com';
+    // Fallback
+    return 'https://foodle-2w8y.onrender.com';
 };
 
 export const API_BASE_URL = getApiBaseUrl();
@@ -71,3 +75,4 @@ export const apiCall = async (
     
     return fetch(url, finalOptions);
 };
+
